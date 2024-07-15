@@ -1,0 +1,38 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.containerOfPages{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.first{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: aqua;
+}
+.second{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    background-color: blueviolet;
+}
+.third{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    background-color: rgb(43, 226, 141);
+}
+.fourth{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    background-color: rgb(25, 8, 255);
+}

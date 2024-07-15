@@ -1,0 +1,66 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    box-sizing: border-box;
+}
+#cursor{
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 204, 0);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid tomato;
+    box-shadow: 
+    0 0 5px 3px #fff,
+    0 0 10px 4px #fff,
+    0 0 20px 5px #fff,
+    0 0 40px 6px #0ff,
+    0 0 80px 7px #0ff,
+    0 0 90px 8px #0ff,
+    0 0 100px 9px #0ff,
+    0 0 150px 10px #0ff;
+}
+#cursor:active{
+    animation-name: clickCursor;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+    animation-duration: 0.25s;
+}
+@keyframes clickCursor {
+    0%{
+        box-shadow: 
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px #f00,
+        0 0 0px 20px rgb(255, 0, 0);
+    };
+    50%{
+        box-shadow: 
+        0 0 5px 0px #fff,
+        0 0 10px 0px #fff,
+        0 0 20px 0px #fff,
+        0 0 40px 20px #0ff,
+        0 0 80px 20px #0ff,
+        0 0 90px 20px #0ff,
+        0 0 100px 20px #0ff,
+        0 0 150px 20px #0ff;
+    };
+    100%{
+        box-shadow: 
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px #f00,
+        0 0 0px 200px rgb(255, 0, 0);
+    };
+}
